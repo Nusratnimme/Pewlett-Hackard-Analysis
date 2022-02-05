@@ -2,7 +2,7 @@
 
 ## Overview
 
-Pewlett Hackard, a large company employing thousands of people, is facing a situation where a large number of employees are going to retire around the same time. The company needs to determine how many employees will be retiring, what are their roles, decide retirement packages for them, find out which positions will need to fille in the future, and how to retain institutional knowledge by mentoring the newcomers. All these will help Pewlett Hackard remain functional during and in the aftermath of the "Silver Tsunami", the large wave of retirements.
+Pewlett Hackard, a large company employing thousands of people, is facing a situation where a large number of employees are going to retire around the same time. The company needs to determine how many employees will be retiring, what are their roles, decide retirement packages for them, find out which positions will need to be filled in the future, and how to retain institutional knowledge by mentoring the newcomers. All these will help Pewlett Hackard remain functional during and in the aftermath of the "Silver Tsunami", the large wave of retirements.
 
 The HR department is tasked with analyzing employees' data in SQL and advise Pewlett Hackard management on preparing for the upcoming Silver Tsunami.
 
@@ -11,9 +11,12 @@ The HR department is tasked with analyzing employees' data in SQL and advise Pew
 - Data Source:
 
 The data consist of six csv files as below:
-- departments.csv           - dept_emp.csv
-- employees.csv             - dept_managers.csv
-- salaries.csv              - titles.csv
+- departments.csv
+- dept_emp.csv
+- employees.csv             
+- dept_managers.csv
+- salaries.csv             
+- titles.csv
 
 Softwares:
 
@@ -21,7 +24,7 @@ Softwares:
 - pgAdmin 4
 - VS Code
 
-## Pupose
+## Purpose
 
 The purpose of the analyses are as below:
 
@@ -47,7 +50,7 @@ The purpose of the analyses are as below:
 
 - To avoid duplicate entries as some employees progressed in their career over the years assuming new roles, *DISTINCT ON* function was used to create a new table containing latest titles for duplicates. 
 
-- That the record with latest title was retained was ensured by keeping records where *to_date* column's value is '9999-01-01'indicating current title. Then the table was sorted in by the employee number in asending order and by to_date in descending order.
+- That the record with latest title was retained was ensured by keeping records where *to_date* column's value is '9999-01-01' indicating current title. Then the table was sorted by the employee number in asending order and by to_date in descending order.
 
 ![Unique_titles](https://github.com/Nusratnimme/Pewlett-Hackard-Analysis/blob/main/Resources/Unique_titles.png)
 
@@ -76,7 +79,7 @@ The purpose of the analyses are as below:
 
 ## Summary
 
-The findings from the analyses provide us with insight to address following issues:
+The findings from the analyses provide us with insights to address following issues:
 
 ### Roles to be filled as the "silver tsunami" begins to make an impact
 
