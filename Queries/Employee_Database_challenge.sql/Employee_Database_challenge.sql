@@ -83,7 +83,7 @@ ORDER BY rt.emp_no;
 
 SELECT * FROM retiring_dept;
 
--- 2. Count total number of retiring employees by department and title
+-- Count total number of retiring employees by department and title
 
 SELECT rd.dept_name, rd.title, count(rd.emp_no) 
 INTO retiring_employees
@@ -93,7 +93,7 @@ ORDER BY rd.dept_name desc, rd.count desc;
 
 SELECT * FROM retiring_employees;
 
--- Get the number of probable mentors 
+-- 2. Get the number of probable mentors 
 SELECT DISTINCT ON (e.emp_no) e.emp_no,
 	e.first_name,
 	e.last_name,
