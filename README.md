@@ -41,7 +41,7 @@ The purpose of the analyses are as below:
 
 - The query returned **133,776** rows. However, this is **NOT** the number of employees eligible for retirement as there may be duplicates in the data.
 
-![Retirement_titles]()
+![Retirement_titles](https://github.com/Nusratnimme/Pewlett-Hackard-Analysis/blob/main/Resources/Retirement_titles.png)
 
 ### 2. Final list of retiring employees (excluding duplicates)
 
@@ -49,7 +49,7 @@ The purpose of the analyses are as below:
 
 - That the record with latest title was retained was ensured by keeping records where *to_date* column's value is '9999-01-01'indicating current title. Then the table was sorted in by the employee number in asending order and by to_date in descending order.
 
-![Unique_titles]()
+![Unique_titles](https://github.com/Nusratnimme/Pewlett-Hackard-Analysis/blob/main/Resources/Unique_titles.png)
 
 - This query returned **72,458** rows which is the number of employees who are going to retire in the next few years.
 
@@ -59,7 +59,7 @@ The purpose of the analyses are as below:
 
 - The table below shows the number employees to retire by titles. As can be seen, a very high number of employees with Senior Engineer and Senior Staff titles - **25,916** and **24,926** respectively - are up for retirement.
 
-![Retiring_titles]()
+![Retiring_titles](https://github.com/Nusratnimme/Pewlett-Hackard-Analysis/blob/main/Resources/Retiring_titles.png)
 
 ### 4. The number of employees eligible for the mentorship program
 
@@ -69,7 +69,7 @@ The purpose of the analyses are as below:
 
 - The resulting table is as below:
 
-![Mentorship_eligibility]()
+![Mentorship_eligibility](https://github.com/Nusratnimme/Pewlett-Hackard-Analysis/blob/main/Resources/Mentorship_program.png)
 
 - According to the mentorship eligibility criteria, **1,549** current employees are eligible for the program.
 
@@ -86,7 +86,7 @@ However, in addition to considering employees to retire by title, we also need t
 
 The resulting table is as below:   
 
-![retiring_dept]()
+![Retiring_employees](https://github.com/Nusratnimme/Pewlett-Hackard-Analysis/blob/main/Resources/Retiries_by_dept.png)
 
 As we can see, **Production**, **Development** and **Sales** departments are going to be most affected. **12,308** and **11,256** Senior Enginners will retire in the Development and Production departments respectively, and **8,802** Senior Staff in the Sales department will retire.
 
@@ -94,8 +94,8 @@ It can be concluded that the recruitment of Senior Engineers with experience in 
 
 ### Availability of qualified mentors for the next generation of employees
 
-As we have found in earlier analyses, there are over **70,000** thousand positions to be vacant soon and there are just over **1,500** mentors available to guide the next generation of employees as per the mentorship criteria. This gives us an approximately **50 to 1** mentee-mentor ratio. This is, of course, not ideal.   
+As we have found in earlier analyses, there are over **70,000** thousand positions to be vacant soon and there are just over **1,500** mentors available to guide the next generation of employees as per the mentorship criteria. This gives us an approximately **50 to 1** mentee-mentor ratio. This is, of course, not ideal.
 
 A good solution could be to relax the criteria for mentorship by widening the range of date of birth for potential mentors. If we include all employees who were born in *1963-1965* instead of only those born in 1965 in mentorship eligibility, we get a pool of more than **38,000** employees. This certainly gives us a more practical mentor-mentee ratio to work with.
 
-![Retiring_employees]()
+![Retiring_employees](https://github.com/Nusratnimme/Pewlett-Hackard-Analysis/blob/main/Resources/Qualified_mentors.png)
